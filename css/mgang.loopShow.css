@@ -1,0 +1,64 @@
+/* CSS Document */
+/*body控制margin 和 padding，实现居中*/
+body{
+	margin:0 auto;
+	padding:0;
+}
+/*统一宽高，使用者可以修改这个css的width和height中的值来修改轮播插件的大小*/
+.loopShow,.ls_item,.ls_item img,#numNav{
+	width:800px;
+	height:500px;
+}
+/*统一按钮和数字导航的样式控制*/
+.href,#numNav li{
+	width:20px;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:10px;
+}
+#numNav li:hover,.liBgColor{
+    background-color: green;
+}
+/*让loopShow这个div居中*/
+.loopShow{
+	margin:0 auto;
+}
+/*轮播插件的div项*/
+.ls_item{
+	visibility:hidden;
+	position:absolute;
+	z-index:0;
+}
+/*按钮的样式*/
+.href{
+	background-color:gray;
+	position:absolute;
+}
+/*按钮的盒子div的定位*/
+#link{
+	position:absolute;
+	z-index:2;
+}
+/*数字导航的样式*/
+#numNav{
+	display:block;
+	padding:0px;
+	margin:0 auto;
+	margin-top:10px;
+	position:absolute;
+	z-index:1;
+	list-style-type:none;
+	
+}
+#numNav li{
+     background-color:gray;
+     float:right;
+     margin-right:5px;
+ }
+
+
+
+	
